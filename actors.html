@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Actors</title>
+    <link rel="stylesheet" href="actors.css" />
+  </head>
+  <body>
+    <div id="header-container">
+        
+    </div>
+
+    <h1>Actors</h1>
+    <div id="actors"></div>
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-container").innerHTML = data;
+        });
+    </script>
+    <script src="search.js" defer></script>
+
+    <script src="actors.js"></script>
+  </body>
+</html>
